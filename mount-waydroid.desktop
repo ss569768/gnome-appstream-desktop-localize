@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=挂载 Waydroid
+Comment=双击挂载 Waydroid 目录
+Exec=bash -c 'sudo bindfs --mirror=$(id -u) ~/.local/share/waydroid/data/media/0 /mnt/waydroid; echo "挂载成功！2秒后自动关闭..."; sleep 2'
+Terminal=true
+Icon=utilities-terminal
